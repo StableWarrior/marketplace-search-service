@@ -1,6 +1,7 @@
 from typing import List
 
-from sqlalchemy import delete, func, insert, select
+from sqlalchemy import delete, func, select
+from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.application.ports.repositories import SearchRepository, SortKey
